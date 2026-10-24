@@ -1,0 +1,17 @@
+{
+  "name": "freedom-call-remastered-coop-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Authoritative WebSocket room and cooperative naval/fort assault prototype for Freedom Call: Unity Remastered",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

@@ -1,0 +1,30 @@
+FREEDOM CALL: UNITY - STORY-INTEGRATED QTE & 2D MINIGAMES
+
+What changed:
+- Added contextual, playable story beats directly into selected mission stages.
+- Mission 2, Stage 2: Rooftop Pursuit 2D minigame.
+- Mission 3, Stage 3: Artifact Search 2D minigame.
+- Mission 4, Stage 4: Lockpicking 2D minigame.
+- Mission 7, Stage 5: QTE escape.
+- Mission 11, Stage 3: Artifact Search 2D minigame.
+- Mission 19, Stage 4: QTE combat counter.
+- Mission 20, Stage 5: Rooftop Pursuit 2D minigame.
+- Mission 26, Stage 2: Lockpicking 2D minigame.
+- Mission 27, Stage 5: QTE escape.
+- Dead Kings Mission 35, Stage 2: Artifact Search 2D minigame.
+
+How it works:
+- The story renderer inserts an in-scene action card above the current choices.
+- Story choices are temporarily disabled until the challenge is completed.
+- Success returns to the same story stage and unlocks the original story choices.
+- Completion is saved in localStorage under freedomCallRemasteredExpansionV1.
+- Exiting a minigame does not mark the story beat complete; it returns to the story and leaves the action available.
+- QTE failure can be retried from the story card.
+- The standalone QTE and minigame toolbar shortcuts were removed; these challenges are triggered by the relevant story stages.
+- Existing dialogue and choices are not rewritten.
+
+Validation:
+- Extracted inline JavaScript blocks passed `node --check`.
+- A full browser launch could not be confirmed in this environment, so no claim of end-to-end browser testing is made.
+
+Open the HTML file in a modern browser. Use New Game or load the campaign and advance to one of the listed stages to see the integrated event card.
